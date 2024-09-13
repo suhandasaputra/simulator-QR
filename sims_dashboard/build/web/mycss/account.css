@@ -1,0 +1,156 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Mar 13, 2023, 2:51:29 PM
+    Author     : azzam
+*/
+
+body{
+    zoom: 80%;
+}
+
+.card {
+    background-color: white;
+}
+
+#account_body {
+    /*background-color: blue;*/
+    height: 300px;
+    display: flex;
+    color: #8915e1;
+}
+
+#account_right {
+    margin: 10px;
+    /*background-color: yellow;*/
+    height: 280px;
+    width: 600px;
+    /*display: flex;*/
+}
+#account_biodata {
+    margin-top: 10px;
+    /*background-color: purple;*/
+    height: 120px;
+    width: 600px;
+    /*display: flex;*/
+}
+#account_contact {
+    margin-top: 10px;
+    /*background-color: brown;*/
+    height: 120px;
+    width: 600px;
+    /*display: flex;*/
+}
+.card-body{
+    min-height: 705px;
+}
+#full_name{
+    position: relative;
+    left: 10px;
+    height: 25px;
+    width: 300px;
+    border: 0;
+}
+#add_account_biodata{
+    float: right;
+    right: 170px;
+    position: relative;
+    cursor: pointer;
+}
+#email{
+    position: relative;
+    left: 40px;
+    height: 25px;
+    width: 300px;
+    border: 0;
+}
+#phone{
+    position: relative;
+    left: 33px;
+    height: 25px;
+    width: 300px;
+    border: 0;
+}
+#edit_account_phone{
+    float: right;
+    right: 175px;
+    position: relative;
+    cursor: pointer
+}
+
+
+
+
+@media only screen and (max-width: 400px) {
+    body{
+        zoom: 80%;
+    }
+    .card {
+        background-color: white;
+    }
+    #account_body {
+        /*background-color: blue;*/
+        height: 300px;
+        display: flex;
+        color: #8915e1;
+    }
+    #account_right {
+        margin: 10px;
+        /*background-color: yellow;*/
+        height: 280px;
+        width: -webkit-fill-available;
+        /*display: flex;*/
+    }
+    #account_biodata {
+        margin-top: 10px;
+        /*background-color: purple;*/
+        height: 120px;
+        width: -webkit-fill-available;
+        /*display: flex;*/
+    }
+    #account_contact {
+        margin-top: 10px;
+        /*background-color: brown;*/
+        height: 120px;
+        width: -webkit-fill-available;
+        /*display: flex;*/
+    }
+    .card-body{
+        min-height: 620px;
+    }
+    #full_name{
+        position: relative;
+        left: 10px;
+        height: 25px;
+        width: 200px;
+        border: 0;
+    }
+    #add_account_biodata{
+        float: right;
+        right: 50px;
+        position: relative;
+        cursor: pointer;
+    }
+    #email{
+        position: relative;
+        left: 40px;
+        height: 25px;
+        width: 200px;
+        border: 0;
+    }
+    #phone{
+        position: relative;
+        left: 33px;
+        height: 25px;
+        width: 200px;
+        border: 0;
+    }
+    #edit_account_phone{
+        float: right;
+        right: 50px;
+        position: relative;
+        cursor: pointer
+    }
+}

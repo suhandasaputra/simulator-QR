@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+<!--    <servlet>
+        <servlet-name>action</servlet-name>
+        <servlet-class>org.apache.struts.action.ActionServlet</servlet-class>
+        <init-param>
+            <param-name>config</param-name>
+            <param-value>/WEB-INF/struts-config.xml</param-value>
+        </init-param>
+        <init-param>
+            <param-name>debug</param-name>
+            <param-value>2</param-value>
+        </init-param>
+        <init-param>
+            <param-name>detail</param-name>
+            <param-value>2</param-value>
+        </init-param>
+        <load-on-startup>2</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>action</servlet-name>
+        <url-pattern>*.do</url-pattern>
+    </servlet-mapping>-->
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+    
+    
+    <!-- =============================jsp=================================-->
+    <servlet>
+        <servlet-name>index</servlet-name>
+        <jsp-file>/index.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>index</servlet-name>
+        <url-pattern>/ho</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>db</servlet-name>
+        <jsp-file>/dashboard.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>db</servlet-name>
+        <url-pattern>/db</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>su</servlet-name>
+        <jsp-file>/signup.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>su</servlet-name>
+        <url-pattern>/su</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>pd</servlet-name>
+        <jsp-file>/product.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>pd</servlet-name>
+        <url-pattern>/pd</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>rpt</servlet-name>
+        <jsp-file>/report.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>rpt</servlet-name>
+        <url-pattern>/rpt</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>acc</servlet-name>
+        <jsp-file>/account.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>acc</servlet-name>
+        <url-pattern>/acc</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>usr</servlet-name>
+        <jsp-file>/user.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>usr</servlet-name>
+        <url-pattern>/usr</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>merc</servlet-name>
+        <jsp-file>/merchant.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>merc</servlet-name>
+        <url-pattern>/merc</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>empl_stat</servlet-name>
+        <jsp-file>/employee_status.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>empl_stat</servlet-name>
+        <url-pattern>/empl_stat</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>position</servlet-name>
+        <jsp-file>/position.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>position</servlet-name>
+        <url-pattern>/position</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>majority</servlet-name>
+        <jsp-file>/majority.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>majority</servlet-name>
+        <url-pattern>/majority</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>terminal</servlet-name>
+        <jsp-file>/terminal.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>terminal</servlet-name>
+        <url-pattern>/terminal</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>shift</servlet-name>
+        <jsp-file>/shift.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>shift</servlet-name>
+        <url-pattern>/shift</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>sched</servlet-name>
+        <jsp-file>/schedule.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>sched</servlet-name>
+        <url-pattern>/sched</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>request</servlet-name>
+        <jsp-file>/request.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>request</servlet-name>
+        <url-pattern>/request</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>requesttimeoff</servlet-name>
+        <jsp-file>/request_timeoff.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>requesttimeoff</servlet-name>
+        <url-pattern>/requesttimeoff</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>requestovertime</servlet-name>
+        <jsp-file>/request_overtime.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>requestovertime</servlet-name>
+        <url-pattern>/requestovertime</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>requestreimbursement</servlet-name>
+        <jsp-file>/request_reimbursement.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>requestreimbursement</servlet-name>
+        <url-pattern>/requestreimbursement</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>tipe</servlet-name>
+        <jsp-file>/tipe.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>tipe</servlet-name>
+        <url-pattern>/tipe</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>brand</servlet-name>
+        <jsp-file>/brand.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>brand</servlet-name>
+        <url-pattern>/brand</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>timeoff</servlet-name>
+        <jsp-file>/timeoff.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>timeoff</servlet-name>
+        <url-pattern>/timeoff</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>announcement</servlet-name>
+        <jsp-file>/announcement.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>announcement</servlet-name>
+        <url-pattern>/announcement</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>summary</servlet-name>
+        <jsp-file>/summary.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>summary</servlet-name>
+        <url-pattern>/summary</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>voi</servlet-name>
+        <jsp-file>/void.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>voi</servlet-name>
+        <url-pattern>/voi</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>fopa</servlet-name>
+        <jsp-file>/forgot_password.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>fopa</servlet-name>
+        <url-pattern>/fopa</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>db_a</servlet-name>
+        <jsp-file>/dashboard_admin.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>db_a</servlet-name>
+        <url-pattern>/db_a</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>usr_a</servlet-name>
+        <jsp-file>/user_admin.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>usr_a</servlet-name>
+        <url-pattern>/usr_a</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>coa</servlet-name>
+        <jsp-file>/coa.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>coa</servlet-name>
+        <url-pattern>/coa</url-pattern>
+    </servlet-mapping>
+    
+    
+    <!-- ============================servlet==============================-->        
+    
+<!--    <servlet>
+        <servlet-name>lgs</servlet-name>
+        <servlet-class>com.matapos.servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>lgs</servlet-name>
+        <url-pattern>/lgs</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>lgos</servlet-name>
+        <servlet-class>com.matapos.servlet.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>lgos</servlet-name>
+        <url-pattern>/lgos</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>UserServlet</servlet-name>
+        <servlet-class>com.matapos.servlet.UserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserServlet</servlet-name>
+        <url-pattern>/usri</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>AddUserServlet</servlet-name>
+        <servlet-class>com.matapos.servlet.AddUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddUserServlet</servlet-name>
+        <url-pattern>/adduser</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>EditUserServlet</servlet-name>
+        <servlet-class>com.matapos.servlet.EditUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EditUserServlet</servlet-name>
+        <url-pattern>/edituser</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>DeleteUserServlet</servlet-name>
+        <servlet-class>com.matapos.servlet.DeleteUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteUserServlet</servlet-name>
+        <url-pattern>/deluser</url-pattern>
+    </servlet-mapping>-->
+</web-app>
